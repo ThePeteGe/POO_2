@@ -44,12 +44,36 @@ public class Cuenta {
     //metodo tostring
 
     @Override
+
     public String toString() {
-        return "Cuenta{" +
-                "numerodecuenta=" + numerodecuenta +
-                ", cedula=" + cedula +
-                ", saldoactual=" + saldoactual +
-                '}';
+        return "Cuenta:\n " +
+                "numerodecuenta: " + numerodecuenta +
+                "\n cedula: " + cedula +
+                "\n saldoactual:  " + saldoactual +
+                '.';
+    }public Double saldoactual (Double saldoactual) {
+        if (saldoactual < 10000){
+            System.out.println("Error: Saldo insuficiente ");
+        } else {
+
+        }
+            System.out.println(1);
+
+        return null ;
     }
+
+    public Double ingresar (double monto) {
+return this.saldoactual + monto;
+    }
+        public Double retirar (double monto2) {
+            return this.saldoactual - monto2;
+
+
+    }
+
+    public Double  retirar2 (double monto3) {
+        return this.saldoactual * 0.20;
+    }
+
 
 }
